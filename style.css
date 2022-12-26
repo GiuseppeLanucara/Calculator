@@ -35,7 +35,7 @@ input {
 
 .btn:hover {
     cursor: pointer;
-    background-color: lightcoral;
+    background-color: rgb(6, 153, 153);
 }
 
 h2 {

@@ -59,7 +59,22 @@ divideBtn.addEventListener('click', function (e) {
     addValue(e.target.value, calc1)
 });
 multiplyBtn.addEventListener('click', function (e) {
-    console.log(e.target.value);
+    if (calc1 != null) {
+
+        calc2 = parseInt(display.value)
+
+        operation()
+
+        operator = 'multiply';
+
+        display.value = '';
+
+
+    } else {
+        calc1 = parseInt(display.value);
+        display.value = '';
+        operator = 'multiply';
+    }
 });
 minusBtn.addEventListener('click', function (e) {
     if (calc1 != null) {
@@ -102,7 +117,9 @@ function operation() {
             total = calc1 - calc2
             break;
 
-
+        case 'multiply':
+            total = calc1 * calc2
+            break;
 
 
     }

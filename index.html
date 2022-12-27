@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
     <title>Calcolatrice</title>
 </head>
 
 <body>
     <h1>Calcolatrice Semplice</h1>
     <div class="calcolatrice">
-        <form action="" name="calc">
+        <!-- <form action="" name="calc">
             <input id="display" type="text" name="dsp"><br>
             <input class="btn" type="button" value="7" onclick="calc.display.value +='7'">
             <input class="btn" type="button" value="8" onclick="calc.display.value +='8'">
@@ -32,7 +37,25 @@
             <input class="btn" type="button" value="C" onclick="calc.display.value =''">
             <input class="btn" type="button" value="=">
             <input class="btn" type="button" value="+">
-        </form>
+        </form> -->
+
+        <input type="text" name="dsp" id="display">
+        <input class="btn" type="button" value="7" id="7" onclick="display.value +='7'">
+        <input class="btn" type="button" value="8" id="8" onclick="display.value +='8'">
+        <input class="btn" type="button" value="9" id="9" onclick="display.value +='8'">
+        <input class="btn" type="button" value="&#247;" id="divide">
+        <input class="btn" type="button" value="4" id="4" onclick="display.value +='4'">
+        <input class="btn" type="button" value="5" id="5" onclick="display.value +='5'">
+        <input class="btn" type="button" value="6" id="6" onclick="display.value +='6'">
+        <input class="btn" type="button" value="X" id="multiply">
+        <input class="btn" type="button" value="1" id="1" onclick="display.value +='1'">
+        <input class="btn" type="button" value="2" id="2" onclick="display.value +='2'">
+        <input class="btn" type="button" value="3" id="3" onclick="display.value +='3'">
+        <input class="btn" type="button" value="-" id="minus">
+        <input class="btn" type="button" value="0" id="0" onclick="display.value +='0'">
+        <input class="btn" type="button" value="C" id="delete" onclick="display.value = ''">
+        <input class="btn" type="button" value="=" id="equals">
+        <input class="btn" type="button" value="+" id="plus">
     </div>
     <footer>
         <h2>Made For Fun &hearts;</h2>
